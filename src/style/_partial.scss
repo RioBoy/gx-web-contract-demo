@@ -1,0 +1,10 @@
+.wrap-last-child-mb-0 {
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+.wrap-last-child-no-margin {
+  > *:last-child {
+    margin: 0 !important;
+  }
+}
