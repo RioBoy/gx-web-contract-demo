@@ -201,3 +201,20 @@ h1 {
   overflow: hidden;
   white-space: pre-wrap;
 }
+
+// Responsive
+@include media-breakpoint-down(md) {
+  .h2,
+  h2 {
+    @include config-typography(28px, -0.2px, 32.5px, 600);
+  }
+
+  .mobile-fs-24 {
+    font-size: 1.25rem;
+  }
+
+  .mobile-fs-20,
+  .mobile-wp-fs-20 * {
+    font-size: 1rem;
+  }
+}

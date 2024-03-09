@@ -13,7 +13,7 @@ const SectionInformation = ({ data = {} }) => {
       <div className="mb-4">
         <PageSubTitle
           title="Person in Charge"
-          extraClass="border-bottom border-neutral-400"
+          extraClass="mobile-fs-24 border-bottom border-neutral-400"
         />
 
         <HorizontalLoopDataLogic
@@ -25,8 +25,8 @@ const SectionInformation = ({ data = {} }) => {
             objectListDetailCustom('Identification Number', 'PR93929303'),
           ]}
           config={{
-            titleColumn: 'col-md-4',
-            contentColumn: 'col-md-8',
+            titleColumn: 'col-md-5 col-lg-4',
+            contentColumn: 'col-md-7 col-lg-8',
           }}
         />
       </div>
@@ -34,7 +34,7 @@ const SectionInformation = ({ data = {} }) => {
       <div className="mb-4">
         <PageSubTitle
           title="Company Infomation"
-          extraClass="border-bottom border-neutral-400"
+          extraClass="mobile-fs-24 border-bottom border-neutral-400"
         />
 
         <HorizontalLoopDataLogic
@@ -43,8 +43,8 @@ const SectionInformation = ({ data = {} }) => {
             objectListDetailCustom('Company Address', 'Demo'),
           ]}
           config={{
-            titleColumn: 'col-md-4',
-            contentColumn: 'col-md-8',
+            titleColumn: 'col-md-5 col-lg-4',
+            contentColumn: 'col-md-7 col-lg-8',
           }}
         />
       </div>
@@ -52,22 +52,29 @@ const SectionInformation = ({ data = {} }) => {
       <div className="mb-4">
         <PageSubTitle
           title="Service Location Information"
-          extraClass="border-bottom border-neutral-400"
+          extraClass="mobile-fs-24 border-bottom border-neutral-400"
         />
 
         <HorizontalLoopDataLogic
           list={[
-            objectListDetailCustom('Location Nickname', 'Villa Deg'),
+            objectListDetailCustom(
+              'Location Nickname',
+              'Villa Deg',
+              false,
+              true,
+            ),
             objectListDetailCustom(
               'Service Location Address',
               'Jl Kerobokan x838939839838939839829833939889494390943490943903490',
+              false,
+              true,
             ),
             objectListDetailCustom('Property Ownership', 'Contract'),
             objectListDetailCustom('Building Type', 'Villa'),
           ]}
           config={{
-            titleColumn: 'col-md-4',
-            contentColumn: 'col-md-8',
+            titleColumn: 'col-md-5 col-lg-4',
+            contentColumn: 'col-md-7 col-lg-8',
           }}
         />
       </div>
@@ -75,12 +82,17 @@ const SectionInformation = ({ data = {} }) => {
       <div className="mb-4">
         <PageSubTitle
           title="Subscription Information"
-          extraClass="border-bottom border-neutral-400"
+          extraClass="mobile-fs-24 border-bottom border-neutral-400"
         />
 
         <HorizontalLoopDataLogic
           list={[
-            objectListDetailCustom('Package Name', 'Xtreme Lite 100 MBPS SOHO'),
+            objectListDetailCustom(
+              'Package Name',
+              'Xtreme Lite 100 MBPS SOHO',
+              false,
+              true,
+            ),
             objectListDetailCustom('Recurring Fee', 'Rp 1.000.000.000'),
             objectListDetailCustom('Setup Fee', 'Rp 500.000'),
             objectListDetailCustom('Maintenance Fee', 'Rp 0'),
@@ -91,8 +103,8 @@ const SectionInformation = ({ data = {} }) => {
             ),
           ]}
           config={{
-            titleColumn: 'col-md-4',
-            contentColumn: 'col-md-8',
+            titleColumn: 'col-md-5 col-lg-4',
+            contentColumn: 'col-md-7 col-lg-8',
           }}
         />
       </div>
@@ -100,10 +112,10 @@ const SectionInformation = ({ data = {} }) => {
       <div className="mb-5">
         <PageSubTitle
           title="Statement"
-          extraClass="border-bottom border-neutral-400"
+          extraClass="mobile-fs-24 border-bottom border-neutral-400"
         />
 
-        <p className="fs-20 fw-500 mb-0">
+        <p className="mobile-fs-20 fs-20 fw-500 mb-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and

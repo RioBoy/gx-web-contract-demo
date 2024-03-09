@@ -61,6 +61,8 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: $neutral-100;
+    width: calc(100% - 1.75rem);
+    text-align: center;
   }
 }
 
@@ -74,3 +76,4 @@ footer {
 
 @import '_typography';
 @import '_partial';
+@import '_responsive';
